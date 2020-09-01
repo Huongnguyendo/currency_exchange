@@ -2,9 +2,21 @@
   box-sizing: border-box;
 }
 
+.background {
+  background-image: url("../img/background.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
 .converter {
-  /* background: rgba(0, 34, 114, 0.65); */
-  background-color: #274487;
+  width: 80%;
+  background-color: #001753;
   border-radius: 15px 15px 0px 0px;
   padding: 5px 32px 30px;
 }
@@ -46,7 +58,6 @@ p {
 
 #result {
   text-align: center;
-  /* color:  rgb(255, 255, 255); */
   font-size: 2.5rem;
   color: #fdb813;
 }
@@ -91,6 +102,12 @@ p {
 }
 
 .swap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.convert {
   display: flex;
   flex-direction: column;
   align-items: center;
