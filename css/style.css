@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+.converter {
+  /* background: rgba(0, 34, 114, 0.65); */
+  background-color: #274487;
+  border-radius: 15px 15px 0px 0px;
+  padding: 5px 32px 30px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  margin-left: 0px;
+  color: #fdb813;
+}
+
+p {
+  color: rgb(255, 255, 255);
+  margin: 0px 10px 5px;
+}
+
+#toCurrency {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  height: 60px;
+  width: 60px;
+  background-color: #fdb813;
+  color: blue;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn i {
+  height: 30px;
+  line-height: 30px;
+  width: 17.5px;
+  color: rgb(0, 34, 114);
+}
+
+#result {
+  text-align: center;
+  /* color:  rgb(255, 255, 255); */
+  font-size: 2.5rem;
+  color: #fdb813;
+}
+
+#amount {
+  box-sizing: border-box;
+  color: rgb(0, 34, 114);
+  font-size: 1rem;
+  height: 60px;
+  padding-left: 20px;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  border-width: 0px;
+  border-radius: 10px;
+}
+
+.dropdown {
+  background-color: #fff;
+  caret-color: #002272;
+  color: #002272;
+  cursor: pointer;
+  border-width: 0;
+  height: 60px;
+  width: 100%;
+  border-radius: 10px;
+  overflow-y: hidden;
+}
+
+.radioChoice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+
+.fa-exchange-alt {
+  height: 60px;
+  line-height: 60px;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+}
+
+.swap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

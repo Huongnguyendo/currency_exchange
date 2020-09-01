@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="converter">
+      <h1>Currency Converter</h1>
+      <div class="row">
+        <div class="col-md-3">
+          <p>Amount</p>
+          <input type="number" id="amount" />
+        </div>
+
+        <div class="col-md-3">
+          <p>From</p>
+          <!-- from currency -->
+          <select
+            class="dropdown w-100"
+            name="fromCurrency"
+            id="fromCurrency"
+            onchange="getSelectFromCurrency()"
+          >
+            <option value="VND">VND</option>
+            <option value="USD">USD</option>
+            <option value="KRW">KRW</option>
+            <option value="EUR">EUR</option>
+          </select>
+        </div>
+
+        <div class="swap col-md-1">
+          <p>Swap</p>
+          <i class="fa fa-exchange-alt" id="swapIcon" onclick="swap()"></i>
+        </div>
+
+        <div class="radioChoice col-md-3">
+          <p>To</p>
+          <!-- to currency -->
+          <form
+            id="toCurrency"
+            name="toCurrency"
+            for="choice"
+            onchange="getSelectToCurrency()"
+          >
+            <div><input type="radio" name="choice" value="VND" /> VND</div>
+            <div><input type="radio" name="choice" value="USD" /> USD</div>
+            <div><input type="radio" name="choice" value="KRW" /> KRW</div>
+            <div><input type="radio" name="choice" value="EUR" /> EUR</div>
+          </form>
+        </div>
+
+        <div class="col-md-2">
+          <p>Convert</p>
+          <button
+            class="btn ml-2"
+            id="convertButton"
+            onclick="calculate()"
+            style="display: block"
+          >
+            <i class="fa fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+      <p class="mt-5" id="result" style="display: block"></p>
+    </div>
+
+    <!-- JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/index2.js"></script>
+  </body>
+</html>
