@@ -49,11 +49,6 @@ function swap() {
   // get amount
   let amount = getAmount();
 
-  if (isNaN(parseInt(amount))) {
-    alert("Please input valid amount!");
-    return;
-  }
-
   let fromCurrency = getSelectToCurrency();
   let toCurrency = getSelectFromCurrency();
   document.getElementById("fromCurrency").value = fromCurrency;
@@ -63,9 +58,6 @@ function swap() {
     result = ((amount * vndRate[fromCurrency]) / vndRate[toCurrency]).toFixed(
       2
     );
-  } else {
-    alert("Please input valid currency!");
-    return;
   }
 
   document.getElementById("result").innerHTML =
